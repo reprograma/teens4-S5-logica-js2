@@ -1,90 +1,45 @@
-# Javascript II - Usando o DOM
+# Javascript II - Turma Teens 4 - Usando o DOM
 
-
-
-### Façam suas perguntas através do DontPad
-
-[http://dontpad.com/on13-js2](http://dontpad.com/on13-js2)
 
 ----
 Vamos aprender ou retomar nessa semana:
 - *Revisão*
-- [Arrow functions - funções de flecha -](#function)
+- *Listas e Objetos*
 - [Árvore DOM](#tree)
 - [Selecionando elementos no HTML](#select)
-    - [x]  .getElementById 
-    - [x]  .getElementsByClassName
-    - [x]  .getElementsByTagName 
-    - [x]  .querySelector 
-    - [x]  .querySelectorAll  
+    - []  .getElementById 
+    - []  .getElementsByClassName
+    - []  .getElementsByTagName 
+    - []  .querySelector 
+    - []  .querySelectorAll  
 - [Manipulando conteúdo](#changingContent)
-    - [x]  .textContent
-    - [x]  .innerText
-    - [x]  .innerHTML
-    - [x]  .value (inputs)
+    - []  .textContent
+    - []  .innerText
+    - []  .innerHTML
+    - []  .value (inputs)
 - [Alterando estilos](#changingStyle)
-    - [x]  .style.property (camelCase)
-    - [x]  .classList
-        - [x]  .add()
-        - [x]  .remove()
+    - []  .style.property (camelCase)
+    - []  .classList
+        - []  .add()
+        - []  .remove()
         - [ ]  .toggle()
 - [Trabalhando com propriedades dos elementos](#elementProps)  
-    - [x]  .setAtrribute()
-    - [x]  .getAtrribute()
+    - []  .setAtrribute()
+    - []  .getAtrribute()
     - [ ]  .removeAttribute() 
 - [Criando elementos, inserindo e removendo no HTML](#createElement)
-    - [x]  .createElement() - criar
-    - [x]  .append() / .appendChild() - inserir
+    - []  .createElement() - criar
+    - []  .append() / .appendChild() - inserir
     - [ ]  .prepend() - inserir
     - [ ]  .remove() / .removeChild() - remover
-- [Navegando pelos elementos](#navigateElements)
-    - [ ]  Parents (.parentNode, .parentElement ) 
-    - [ ]  Children (.children, .childNodes, .firstElementChild, .lastChild) 
-    - [ ]  Siblings (.nextSibling, .nextElementSibling,  .previousSibling, .previousElementSibling )
 - [Funções de eventos](#event)
-    - [x]  Com a `chamada` direto no HTML
-    - [x]  .addEventListener() 
+    - []  Com a `chamada` direto no HTML
+    - []  .addEventListener() 
         - [Tipos de eventos - Site MDN](https://developer.mozilla.org/pt-BR/docs/Web/Events) 
         - event.preventDefault() - em formulários -
 - [links úteis](#links)
 ----
 
-<a id="function"></a>
-
-## **arrow functions!**
-
-Você sabia que é possível declarar uma função de um jeito diferente? Sim, para isso nós utilizamos as arrows functions!
-
-Uma expressão arrow function possui uma sintaxe mais curta quando comparada a uma expressão de função. 
-
-A sua sintaxe mais comum é essa:
-
-``` Javascript
-const minhaFuncao = (param1, param2, ...) => {
-  //passos da minha função
-
-  return meuResultado
-}
-```
-
-E ela pode ser ainda mais diminuta! Se a função tem apenas um único parâmetro e esse parâmetro retorna um valor, você pode remover as chaves e a palavra `return`.
-
-
-``` Javascript
-const minhaFuncao = (param1) => meuResultado;
-```
-
-Aliás, a arrow function pode ser escrita ainda nesse formato ainda mais simples - **que nós vamos usar bastante quando tratarmos sobre métodos de array**:
-
-``` Javascript
-(param1) => meuResultado; // um jeito
-
-(param1) => {
-  return meuResultado
-};
-
-```
----
 <a id="tree"></a>
 
 # DOM - Document Object Model
